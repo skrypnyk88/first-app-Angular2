@@ -1,9 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Directive } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <h1>Hello from App</h1>
+    <fa-databinding></fa-databinding>
+  `,
+  styles: [`
+    h1 {
+      color: green;
+    }
+  `]
 })
 export class AppComponent {
   title = 'app';
